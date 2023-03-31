@@ -3,7 +3,7 @@ import numpy as np
 from mavts import baseline
 
 def test_last():
-    series = pd.read_csv('./tests/data/data_org_trop.csv',
+    series = pd.read_csv('./tests/data/data_siling.csv',
                        index_col=0, parse_dates=True).iloc[:, 0]
 
     for days_ahead in range(1, 11):
@@ -14,7 +14,7 @@ def test_last():
         np.testing.assert_((abs(diff) < 1e-7).mean() == 1.0)
 
 def test_ewm():
-    series = pd.read_csv('./tests/data/data_org_trop.csv',
+    series = pd.read_csv('./tests/data/data_siling.csv',
                        index_col=0, parse_dates=True).iloc[:, 0]
 
     for days_ahead in range(1, 11):
