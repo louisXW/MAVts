@@ -1,4 +1,4 @@
-""" Model error analysis and time series visualization methods. """
+""" Model performance analysis and time series visualization methods. """
 from functools import partial
 import multiprocessing as mp
 from pathlib import Path
