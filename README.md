@@ -31,7 +31,7 @@ For testing we use `pytest`.
 ## Usage
 After installing as above, the package can be used as:
 
-```
+```python
 from mavts import mark, vis, baseline
 
 data = pd.read_csv('observations.csv', index_col=0, parse_dates=True).iloc[:, 0]
