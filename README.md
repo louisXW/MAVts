@@ -3,16 +3,25 @@ MAVts is designed for analysis of models' forecasting performance. MAVts provide
 
 Specifically, this python package provides:
 - methods to mark periods of interest in time series, such as an up or down period, interpolated or possibly manipulated data period, and peaks and bottoms (Figure 1 as an example) (`./src/mavts/mark.py`)
-- methods to conveniently visualize the periods of interest as a filmroll of the time series (`./src/mavts/vis.py`).
+- methods to conveniently visualize the periods of interest as a filmroll of the time series (Animation below as an example) (`./src/mavts/vis.py`).
 - methods to analyze the predictions in each period of interest separately (`./src/mavts/vis.py`) 
 - methods to compare side-by-side the predictions and error of two models (Figure 2 as an example) (`./src/mavts/vis.py`)
 - methods to use the last observation or moving averages as baseline predictions (`./src/mavts/baseline.py`)
 
 ![image](https://user-images.githubusercontent.com/22387034/229267197-aae4e18e-7855-441e-a91e-43be988265ee.png#center) 
-<p align="center">Figure 1 An example of identified up/down periods, peaks/bottoms, and interpolated periods from the forecasting target time series.</p>
+<p align="center">Figure 1: An example of identified up/down periods, peaks/bottoms, and interpolated periods from the forecasting target time series.</p>
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/22387034/229269362-ca61f3b4-b04e-49d4-bce5-d934a80586e6.gif" width="714" height="400" />
+</p>
+
+<p align="center">
+Animation: Filmroll of the time series with marked periods 
+</p>
 
 ![image](https://user-images.githubusercontent.com/22387034/229267805-4896c37a-93fc-49d5-a9ee-30dd5929bc14.png#center)
-<p align="center">Figure 2 An example of Visualization of model performance comparison between Gated Recurrent Units (GRU) and ARIMA </p>
+<p align="center">Figure 2: An example of Visualization of model performance comparison between Gated Recurrent Units (GRU) and ARIMA </p>
+
 ## Install
 
 The package requirements are in `./requirements.txt`. Install them with 
