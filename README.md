@@ -1,4 +1,6 @@
 # Model performance Analysis and Visualization of time series forecasting (MAVts)
+This repository contains the code for ["Enhancing algal bloom forecasting: A novel framework for machine learning performance evaluation during periods of special temporal patterns"](https://doi.org/10.1016/j.envsoft.2024.106164).
+
 MAVts is designed for analysis of models' forecasting performance. MAVts provides simple baseline solutions for time series forecasting (including forecasting using the last observation or a rolling average of past observations). MAVts also provide novel algorithms to identify and visualize speical time series periods of interst and evalaute model's performance on these specifical periods. MAVts could be used to analyze the performances of various time series forecasting models (including but not limit to data-driven machine/deep learning models, process-based forecasting models; stastical time series forecasting models).
 
 Specifically, this python package provides:
@@ -68,4 +70,17 @@ vis.errors_by_periods(data, predictions, './plots/')
 ```
 
 ## Citing
-TODO
+```
+@article{XIA2024106164,
+title = {Enhancing algal bloom forecasting: A novel framework for machine learning performance evaluation during periods of special temporal patterns},
+journal = {Environmental Modelling & Software},
+volume = {180},
+pages = {106164},
+year = {2024},
+issn = {1364-8152},
+doi = {https://doi.org/10.1016/j.envsoft.2024.106164},
+url = {https://www.sciencedirect.com/science/article/pii/S1364815224002251},
+author = {Wei Xia and Ilija Ilievski and Christine Ann Shoemaker},
+}
+```
+
